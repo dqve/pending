@@ -77,4 +77,15 @@
       padding: 10px 5px 6px;
       color: white; }
 
+.hr-line {
+  padding: 1px;
+  background: #037fb0;
+  width: 20%;
+  margin: 2em auto 5em; }
+
+.card img {
+  width: 50%;
+  height: 50%;
+  margin: 1em auto; }
+
 /*# sourceMappingURL=custom.css.map */
