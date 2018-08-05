@@ -96,7 +96,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 3em; }
   .card-custom .cta-button {
-    padding: 15px 20px;
+    margin: 1em auto;
+    padding: 12px 20px;
+    background: transparent;
     border: 1px solid #222;
     border-radius: 0;
     color: #222;
@@ -130,6 +132,21 @@
     padding: 1px;
     background: white;
     width: 70%; }
+  .testimonial-slider .carousel-inner {
+    min-height: 300px; }
+
+.learn-wrapper a {
+  color: #222;
+  padding: 1em;
+  text-align: center; }
+.learn-wrapper .card {
+  transition: all 400ms ease-in-out;
+  border: 0; }
+  .learn-wrapper .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.btn-center {
+  margin: 1em auto; }
 
 #carouselExampleIndicators .carousel-caption {
   color: white;
