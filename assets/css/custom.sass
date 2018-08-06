@@ -10,7 +10,6 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
 // end of variables
 .navbar 
   padding: 0rem
-  margin-bottom: 2rem
 
 .navbar-color1
     background: #ddd
@@ -49,11 +48,11 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
 .nav-btn2
     background: $Btn-color1
 
-@media (min-width: 768px) 
-.dropdown:hover .dropdown-menu 
-    display: block
-    margin-top: 0
-    border-radius: 0
+.navbar-collapse 
+    max-height: 49vh
+    overflow-y: auto
+
+
  
 
 
@@ -105,13 +104,16 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
 
 .hero-section
     position: relative
-    margin: 3em auto
     display: block
     background: url(../img/hero1.jpg)
     background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    background-position: center center
     width: 100%
     min-height: 500px
     padding-top: 6em 
+    margin-bottom: 3em
         
     .hero-text1 
         background: $white
@@ -173,6 +175,7 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
         color: $white
         text-align: center
         padding: 2em
+        max-height: 660px
         img
             margin: 1em auto
             width: 100px
@@ -247,7 +250,7 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
             border: 0
             color: $white
 .card-custom2 
-    height: 250px
+    height: 350px
     text-align: center
     background: $primary-color
     color: $white
@@ -337,3 +340,27 @@ ul, ol
 
 .footer-links
     margin-top: 3em
+.btn-carousel
+    color: $white
+    background: transparent
+    border-radius: 0
+    border: 1px solid $white
+    margin: 1em
+
+@media (min-width: 768px) 
+.dropdown:hover .dropdown-menu 
+    display: block
+    margin-top: 0
+    border-radius: 0
+.hero-section
+    .hero-text1
+        font-size: 14px
+    #hero-h1
+        .hero-text2
+            font-size: 32px
+.testimonial-slider .testimonial-content
+    padding: 0
+    a
+        display: inline-block
+
+        

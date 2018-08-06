@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .navbar {
-  padding: 0rem;
-  margin-bottom: 2rem; }
+  padding: 0rem; }
 
 .navbar-color1 {
   background: #ddd; }
@@ -41,10 +40,9 @@
 .nav-btn2 {
   background: #037fb0; }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-  border-radius: 0; }
+.navbar-collapse {
+  max-height: 49vh;
+  overflow-y: auto; }
 
 .search-btn,
 .login-btn {
@@ -93,13 +91,16 @@
 
 .hero-section {
   position: relative;
-  margin: 3em auto;
   display: block;
   background: url(../img/hero1.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   min-height: 500px;
-  padding-top: 6em; }
+  padding-top: 6em;
+  margin-bottom: 3em; }
   .hero-section .hero-text1 {
     background: white;
     text-align: center;
@@ -156,7 +157,8 @@
   .testimonial-slider .testimonial-content {
     color: white;
     text-align: center;
-    padding: 2em; }
+    padding: 2em;
+    max-height: 660px; }
     .testimonial-slider .testimonial-content img {
       margin: 1em auto;
       width: 100px;
@@ -234,7 +236,7 @@
       color: white; }
 
 .card-custom2 {
-  height: 250px;
+  height: 350px;
   text-align: center;
   background: #0a223f;
   color: white;
@@ -320,5 +322,27 @@ ul, ol {
 
 .footer-links {
   margin-top: 3em; }
+
+.btn-carousel {
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid white;
+  margin: 1em; }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  border-radius: 0; }
+
+.hero-section .hero-text1 {
+  font-size: 14px; }
+.hero-section #hero-h1 .hero-text2 {
+  font-size: 32px; }
+
+.testimonial-slider .testimonial-content {
+  padding: 0; }
+  .testimonial-slider .testimonial-content a {
+    display: inline-block; }
 
 /*# sourceMappingURL=custom.css.map */
