@@ -8,17 +8,54 @@ $Btn-color2: rgba(22, 48, 81, 1)
 $border-color: #222
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
 // end of variables
-.topbar 
-    display: inline-block
-    a 
-        color: #222
-    a:hover 
-        color: $Btn-color1
-    
+.navbar 
+  padding: 0rem
+  margin-bottom: 2rem
 
+.navbar-color1
+    background: #ddd
+    li 
+        a
+            color: $border-color !important
+            &:hover
+                color: $Btn-color1 !important
+.navbar-color2
+    background: $white
+    box-shadow: $box-shadow
+    li
+        height: 100%
+        a
+            color: $Btn-color1 !important
+            font-weight: 600
+            font-size: 16px
+            letter-spacing: .1em
+            &:hover
+                color: $Btn-color2 !important
+            
 
-.custom-nav
-    background-color: $white
+.dropdown .dropdown-menu 
+  border-radius: 0
+ 
+.nav-btn, .nav-btn2
+    padding: 10px 10px
+    border: 0
+    border-radius: 0
+    color: $white
+    margin-bottom: 1em
+    &:hover
+        box-shadow: $box-shadow
+.nav-btn
+    background: $Btn-color2
+.nav-btn2
+    background: $Btn-color1
+
+@media (min-width: 768px) 
+.dropdown:hover .dropdown-menu 
+    display: block
+    margin-top: 0
+    border-radius: 0
+ 
+
 
 .search-btn,
 .login-btn 
@@ -26,19 +63,16 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
     border-radius: 0
     border: 0
     color: $white
-
+    &:hover
+        background-color: $Btn-color1 !important
+        border: 0
+        color: #fff
+        box-shadow: $box-shadow
 
 .search-btn 
     margin: 0 10px 0
     background: $Btn-color2
 
-
-.search-btn,
-.login-btn:hover 
-    background-color: $Btn-color2 !important
-    border: 0
-    color: #fff
-    box-shadow: $box-shadow
 
 
 .login-btn 

@@ -14,63 +14,72 @@
 </head>
 
 <body>
-    <!-- topbar section before navbar -->
-    <div class="topbar">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">ROUTING #256078446</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PARTNERS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">REAL ESTATE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">REWARDS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">WEALTH</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">FOUNDATION</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">LOCATIONS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> ABOUT</a>
-            </li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
+        <div class="navbar-toggler-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-    <!-- main navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow bg-white rounded fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+
+
+        <div class="collapse navbar-collapse flex-column " id="navbar">
+
+            <ul class="navbar-nav  w-100 justify-content-center px-3 navbar-color1">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link disabled" href="#">ROUTING #256078446
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">PATHNERS
+                        <span class="sr-only"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">REAL ESTATE REWARDS
+                        <span class="sr-only"></span>
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WEALTH
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FOUNDATION
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOCATIONS
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn search-btn" type="submit">Search</button>
+                </form>
+            </ul>
+
+            <ul class="navbar-nav  w-100  px-3 navbar-color2">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+
+                <li class="nav-item dropdown ml-auto pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        Dropdown link
+                        CHECKING & SAVINGS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
@@ -78,15 +87,82 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
-                <button class="btn search-btn" type="button">Membership</button>
-                <button class="btn login-btn" type="button">Login</button>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn my-2 my-sm-0 search-btn" type="submit">Search</button>
-                </form>
+                <li class="nav-item dropdown pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        CARDS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        AUTO
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        MORTGAGES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        LOANS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pt-5">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        LEARN
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item pt-5 mr-3 ml-5">
+                    <a href="">
+                        <button class="btn nav-btn">Membership</button>
+                    </a>
+                </li>
+                <li class="nav-item pt-5 ">
+                    <a href="">
+                        <button class="btn nav-btn2">Login</button>
+                    </a>
+                </li>
             </ul>
+
+
         </div>
+
     </nav>
+    <!-- /master nav -->
+
+    <!-- main navbar -->
+
+
     <div class="hero-section">
         <div class="hero-wrapper">
             <div class="col-xs-12 col-md-12 col-lg-6">
